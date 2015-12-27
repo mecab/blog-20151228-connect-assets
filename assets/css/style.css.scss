@@ -1,0 +1,15 @@
+@import "bourbon";
+@import "base/base";
+@import "neat";
+
+.container {
+    @include outer-container;
+
+    .column {
+        @include span-columns(4);
+        background: $secondary-background-color;
+        padding: $small-spacing;
+        border-radius: $base-border-radius;
+    }
+}
+

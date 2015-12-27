@@ -1,0 +1,18 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "connect-assets --output builtAssets --include `node -p \"require('node-neat').with(['assets/css', 'assets/js']).join(' ')\"` --compile style.css main.js"
+  },
+  "author": "mecab",
+  "license": "ISC",
+  "dependencies": {
+    "connect-assets": "^5.0.1",
+    "express": "^4.13.3",
+    "node-neat": "^1.7.2",
+    "node-sass": "^3.4.2",
+    "swig": "^1.4.2"
+  }
+}
